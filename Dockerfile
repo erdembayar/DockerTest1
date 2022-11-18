@@ -6,7 +6,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0.403
 #FROM mcr.microsoft.com/dotnet/sdk:7.0.100
 
-COPY container.sh .
+WORKDIR tmp
+COPY container.sh /tmp
 
-RUN echo '<?xml version="1.0" encoding="utf-8"?><configuration></configuration>' >  nuget.config && \
-    chmod 777 /nuget.config
+RUN chmod 777 /tmp/container.sh

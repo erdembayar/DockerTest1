@@ -6,7 +6,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0.403
 #FROM mcr.microsoft.com/dotnet/sdk:7.0.100
 
-WORKDIR tmp
-COPY container.sh /tmp
+COPY container.sh .
 
-RUN chmod 777 /tmp/container.sh
+RUN chmod 777 /container.sh

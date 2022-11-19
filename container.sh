@@ -5,7 +5,7 @@ whoami
 # Files belongs to root:root and chmodded 777
 # No NuGet source exists
 ls
-
+cd tmp
 echo '<?xml version="1.0" encoding="utf-8"?><configuration></configuration>' >  nuget.config
 # dotnet new nugetconfig
 ls
